@@ -1,0 +1,217 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8F9FA; 
+}
+
+.landing {
+    /* height: 100%;
+    width: 100%; */
+    background-color: #F8F9FA;    
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.link {
+    color: #212529;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.connect {
+    text-align: center;
+}
+
+.foot-link,.contact {
+    color: #212529;
+}
+
+.foot-link:hover {
+    text-decoration: none;
+    color: #212529;
+    background-color: rgba(134, 134, 134, 0.2);
+}
+
+.landing-name,.landing-info {
+    font-size: 35px;
+}
+
+.main-back {
+    padding: 70px;
+}
+
+
+.footer {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff !important;
+    padding: 25px;
+}
+
+.hero-text {
+    color: white;
+}
+
+.underline {
+    border-bottom: solid white;
+}
+
+.back {
+    padding-top: 70px;
+}
+
+.description {
+    padding-top: 10px;
+}
+
+.skills {
+    margin: 0;
+}
+
+.fa-hands-helping {
+    font-size: 240px;
+}
+
+.fa-chalkboard-teacher {
+    font-size: 240px;
+}
+
+.fa-cogs {
+    font-size: 150px;
+}
+
+.fa-robot {
+    font-size: 100px;
+}
+
+.fa-seedling {
+    font-size: 70px;
+}
+
+.fa-html5 {
+    color: #e34f26;
+    font-size: 50px;
+}
+
+.fa-css3-alt {
+    color: #2663be;
+    font-size: 50px;
+}
+
+.fa-bootstrap {
+    color: #563d7c;
+    font-size: 50px;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+    font-size: 50px;
+}
+
+.fa-facebook-square {
+    color: #3B5998;
+    font-size: 50px;
+}
+
+.fa-github-square {
+    color: black;
+    font-size: 50px;
+}
+
+.title-skill {
+    text-align: justify;
+}
+
+.linkRow {
+    text-align-last: right;
+}
+
+.quick {
+    text-align: justify;
+    text-align-last: center;
+}
+
+/*Tablets*/
+@media (min-width: 700px) and (max-width: 1200px) {
+    .landing-info {
+        font-size: 20px;
+    }
+    .project-name {
+        font-size: 25px;
+    }
+    .project-date {
+        font-size: 15px;
+    }
+    .fa-chalkboard-teacher {
+        font-size: 150px;
+    }
+    .fa-cogs, .fa-robot {
+        font-size: 100px;
+    }
+    .fa-hands-helping {
+        font-size: 150px;
+    }
+    .main-back {
+        padding-top: 70px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+    }
+}
+
+/*Mobile Devices*/
+@media (min-width: 300px) and (max-width: 650px) {
+    .code-skills,.title-skill {
+        text-align: center;
+    }
+    .main-back {
+        padding-top: 70px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+    }
+    .nav-ops {
+        font-size: 10px;
+    }
+    .fa-linkedin, .fa-facebook-square, .fa-github-square,.service-event {
+        font-size: 25px;
+    }
+    .fa-cogs, .fa-robot, .fa-hands-helping {
+        font-size: 150px;
+    }
+    .logo-break {
+        display: none;
+    }
+    .logo {
+        height: 25px;
+        width: 25px;
+    }
+    .contact, .quick, .connect, .quick-row, .link-mobile {
+        text-align: center;
+    }
+    .pro-img {
+        height: 300px;
+        widows: 250px;
+    }
+    .img-container {
+        text-align: center;
+    }
+    .removeMobile {
+        display: none;
+    }
+    .landing-name,.project-name {
+        text-align-last: left;
+        font-size: 25px;
+    }
+    .fa-chalkboard-teacher {
+        font-size: 150px;
+    }
+    .hands {
+        text-align: center;
+    }
+    .landing-info {
+        font-size: 10px
+    }
+}
