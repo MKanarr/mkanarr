@@ -11,8 +11,6 @@ body {
 
 .progress_label {
     float: left;
-    width: 10px;
-    height: 10px;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
