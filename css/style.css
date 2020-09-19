@@ -88,6 +88,16 @@ ul.edu {
     padding: 25px;
 }
 
+.fa-github-square.media {
+    color: black !important;
+    font-size: 50px;
+}
+
+.fa-linkedin.media {
+    color: #2867b2 !important;
+    font-size: 50px;
+}
+
 .fa-html5 {
     color: #e34f26;
     font-size: 50px;
