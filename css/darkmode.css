@@ -8,11 +8,15 @@
     color: #eee !important;
   }
   
-  [data-theme="dark"] .nav-link, .navbar-light, .fa-github.proj, .fa-bars, .navbar-brand, .heading {
+  [data-theme="dark"] .nav-link, .navbar-light, .fa-bars, .navbar-brand, .heading {
     color: #eee !important;
   }
 
   [data-theme="dark"] .fa-github.proj {
+    color: #eee !important;
+  }
+
+  [data-theme="dark"] .fa-github-square.media {
     color: #eee !important;
   }
 
