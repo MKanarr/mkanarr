@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <title>MKanarr Personal Portfolio</title>
+    <title>Matthew Kanarr</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Icon-->
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--Font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+    <!-- Darkmode CSS -->
+    <link rel="stylesheet" type="text/css" href="css/darkmode.css">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--FontAwesome-->
@@ -19,32 +21,218 @@
   </head>
 
   <body>
-    <div class="landing">
-      <div class="container h-100" data-aos="fade-right">
-        <div class="row  h-100 justify-content-center align-items-center">
-          <div class="col-md-12 back-img">
-            <h1 class="text-justify landing-name">
-              MATTHEW KANARR
-            </h1>
-            <p class="text-justify landing-info">
-              Full-time Student <i class="fas fa-asterisk"></i> Avid Learner <i class="fas fa-asterisk"></i> Enthusiastic Developer
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="img/mK.png" width="30" height="30" class="d-inline-block align-top rounded" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a data-link="home" class="nav-link scroll_to" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a data-link="experience" class="nav-link scroll_to" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a data-link="projects" class="nav-link scroll_to" href="#projects">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right ml-auto">
+          <li class="nav-item">
+              <a class="nav-link">
+                  <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                      <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+                  </div>
+              </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  
+   <div class="container main-back" data-aos="fade-up">
+      <div class="row">
+        <div class="col-md-4" id="home">
+          <div class="text-center scroll_to">
+            <img class="img-fluid" id="portrait" src="img/matt_k.jpg">
+          </div>
+
+          <!-- <div class="text-center portrait-info">
+            <h2><strong>Matthew Kanarr</strong></h2>
+            <p>Undergraduate student in Computer Science</p>
+          </div> -->
+        </div>
+
+        <div class="col-md-8">
+          <h1><strong>About Me</strong></h1>
+          <div>
+            <p>
+            I am a fourth year undergraduate student at Texas A&M University pursuing a Bachelor of Science in Computer Science 
+            and a former Peer Teacher for the College of Engineering.  Interests of mine include Computer Graphics, UI/UX, Multimedia,
+            and Cybersecurity .  My hobbies include trumpet, running, video games, and teaching. 
             </p>
-            <div class="nav-ops">
-              <a  class="link" href="#">Home</a> |
-              <a class="link" href="about.html">About</a> |
-              <a class="link" href="pro_img.html">Professional Image</a> |
-              <a class="link" href="projects.html">Projects</a> |
-              <a class="link" href="service.html">Service</a> 
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <h3><strong>Interests</strong></h3>
+              <ul>
+                <li>Computer Graphics</li>
+                <li>UI/UX</li>
+                <li>Multimedia</li>
+                <li>Cybersecurity</li>
+              </ul>
+            </div>
+            <div class="col-md-7">
+              <h3><strong>Education</strong></h3>
+              <ul class="edu">
+                <li class="edu_info">
+                  <i class="fas fa-graduation-cap"></i>
+                  <div class="institution" style="margin-left: 45px;border-bottom-style: solid;border-bottom-width: 0px;margin-top: -30px;">
+                    <p class="acd">B.S. in Computer Science</p>
+                    <p class="acd">Texas A&M University</p>  
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-md-4 scroll_to" id="experience">
+          <h1><strong>Experience</strong></h1>
+        </div>
+        
+        <div class="col-md-8">
+          <!-- From https://bootstrapious.com/p/timeline -->
+          <!-- Timeline -->
+          <ul class="timeline">
+            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">Fujitsu Network Communications</h2>
+              <h5 class="h5 mb-0">Software Development Intern</h5><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>June 2020 - August 2020</span>
+              <p class="text-small mt-2 font-weight-light">Worked with the 5G Automation Team
+                <ul>
+                  <li>Designed Python script to automate Evolved Node B provisioning into third-party vendor Element Management System andconduct network discovery</li>
+                  <li>Created graphical user interface to select appropriate configuration utilizing paramiko, scp, and tkinter modules to automateSSH login, and transfer file via secure copy protocol interacting with clients server</li>
+                  <li>Corresponded with development team of 11 in agile environment articulating ideas in daily scrum meetings ensuring companygoals were met</li>
+                </ul>
+              </p>
+            </li>
+            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">Texas A&M Society of Hispanic Professional Engineers</h2>
+              <h5 class="h5 mb-0">Director of Technical Affairs</h5><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>July 2019 - August 2020</span>
+              <p class="text-small mt-2 font-weight-light">Compiled organization presentations and served as chapter webmaster
+                <ul>
+                  <li>Introduced first-ever front end development workshop instructing 15+ novice students on HTML5/CSS3 and Bootstrap 4 es-sentials to construct responsive single page web application</li>
+                  <li>Effectively communicate and lead software development team of 3 implementing agile methodology to meet SHPE goals while analyzing and inspecting code to provide constructive feedback to improve app. development process</li>
+                  <li>Refactored inherited code base for chapter website using HTML5/CSS3 and Bootstrap 4 for multi-platform compatibility whileanalyzing design to create professional modern presence</li>
+                </ul>
+              </p>
+            </li>
+            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">Texas A&M College of Engineering</h2>
+              <h5 class="h5 mb-0">Peer Teacher</h5><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>January 2019 - April 2019</span>
+              <p class="text-small mt-2 font-weight-light">Teaching Assistant for introductory Python course
+                <ul>
+                  <li>Instructed 90+ novice students in Python principles for introductory programming course focusing on ranging topics fromdata types up to functions</li>
+                  <li>Collaborated and consulted with teaching team of 6 to assign grades, distribute class material, and guide course lessons</li>
+                  <li>Applied online Q&A webservice Piazza to answer student questions regarding homework, labs, quizzes, and tests</li>
+                </ul>
+              </p>
+            </li>
+          </ul><!-- End -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 scroll_to" id="projects">
+          <h1><strong>Projects</strong></h1>
+        </div>
+        <div class="col-md-8">
+          <div class=" bg-white rounded ml-3 p-4 shadow">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img class="img-fluid rounded" src="img/twitch_PNG8.png" alt="">
+              </div>
+              <div class="col-md-8">
+                <h2 class="h5 mb-0"><strong>Positivity Bot</strong></h2>
+                <p>
+                  A fun project to learn more about chat bots.  This bot allowed viewers in a stream to send compliments to one another.  
+                  Additionally, jokes could be exchanged between viewers and the host to enhance the streaming experience.  Features such as 
+                  song requests are currnetly in development.
+                </p>
+                <a href="https://github.com/MKanarr/positivity_bot" target="_blank"><i class="fab fa-github proj"></i></a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class=" bg-white rounded ml-3 p-4 shadow ">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img class="img-fluid rounded" src="img/stocker.png" alt="">
+              </div>
+              <div class="col-md-8">
+                <h2 class="h5 mb-0"><strong>Stocker</strong></h2>
+                <p>
+                  Webpage which served as a proof of concept to provide up-to-date inventory information from local Krogers.  This was designed to
+                  assist users with shopping during the beginning of the COVID-19 pandemic.  The Kroger product locator, store, and BING maps API were utilized
+                  to provide relevant product information based on user queries.
+                </p>
+                <a href="https://github.tamu.edu/mkanarr/315-HCI" target="_blank"><i class="fab fa-github proj"></i></a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class=" bg-white rounded ml-3 p-4 shadow">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img class="img-fluid rounded" src="img/OptiState.png" alt="">
+              </div>
+              <div class="col-md-8">
+                <h2 class="h5 mb-0"><strong>OptiState</strong></h2>
+                <p>
+                  1st place winner of the StateFarm Challenge and 3rd place team at HackUNT.  This mobile application was designed to offer life insurance benefits
+                  through the promotion of adopting healthy habits.  Users logged exercise entries and our benefits algorithm would determine the amount of points 
+                  a user would get based on the type of activity they did.  
+                </p>
+                <a href="https://github.com/linazhang12/OptimalState" target="_blank"><i class="fab fa-github proj"></i></a>
+                <a href="https://devpost.com/software/optistate#updates" target="_blank"><i class="fab fa-dev proj"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!--Footer-->
+    <div class="container-fluid footer bg-light shadow-lg">
+      <div class="row">
+        <div class="col-md-12 connect">
+          <h4>DESIGNED WITH</h4>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-bootstrap"></i>
+        </div>
+      </div>
     </div>
+
 
     <!-- Bootstrap core-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/dark-mode-switch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
     <!--AOS-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

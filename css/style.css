@@ -9,6 +9,38 @@ body {
     background-color: #F8F9FA;    
 }
 
+.proj {
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+.fa-bars {
+    color: rgb(192, 192, 192) !important;
+}
+
+.fa-github.proj {
+    color: black !important;
+}
+
+.fa-dev.proj {
+    color: #003E54;
+}
+
+.fa-graduation-cap {
+    font-size: 30px;
+}
+
+ul.edu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.acd {
+    margin: 0;
+    padding: 0;
+}
+
 .bg-light {
     background-color: #ffffff !important;
 }
@@ -23,10 +55,6 @@ body {
 
 .connect {
     text-align: center;
-}
-
-.foot-link,.contact {
-    color: #212529;
 }
 
 .foot-link:hover {
@@ -50,46 +78,6 @@ body {
     padding: 25px;
 }
 
-.hero-text {
-    color: white;
-}
-
-.underline {
-    border-bottom: solid white;
-}
-
-.back {
-    padding-top: 70px;
-}
-
-.description {
-    padding-top: 10px;
-}
-
-.skills {
-    margin: 0;
-}
-
-.fa-hands-helping {
-    font-size: 240px;
-}
-
-.fa-chalkboard-teacher {
-    font-size: 240px;
-}
-
-.fa-cogs {
-    font-size: 150px;
-}
-
-.fa-robot {
-    font-size: 100px;
-}
-
-.fa-seedling {
-    font-size: 70px;
-}
-
 .fa-html5 {
     color: #e34f26;
     font-size: 50px;
@@ -105,35 +93,66 @@ body {
     font-size: 50px;
 }
 
-.fa-linkedin {
-    color: #0077B5;
-    font-size: 50px;
+/* Timeline */
+/* From https://bootstrapious.com/p/timeline */
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
 }
 
-.fa-facebook-square {
-    color: #3B5998;
-    font-size: 50px;
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #007bff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
 }
 
-.fa-github-square {
-    color: black;
-    font-size: 50px;
+li.timeline-item {
+    margin: 20px 0;
 }
 
-.title-skill {
-    text-align: justify;
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
 }
 
-.linkRow {
-    text-align-last: right;
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid rgb(192, 192, 192);
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.quick {
-    text-align: justify;
-    text-align-last: center;
+#portrait {
+    border-radius: 50%;
 }
 
-/*Tablets*/
+/* #home, #experience, #projects {
+    position: fixed;
+} */
+
+/* Tablets
 @media (min-width: 700px) and (max-width: 1200px) {
     .landing-info {
         font-size: 20px;
@@ -161,7 +180,7 @@ body {
     }
 }
 
-/*Mobile Devices*/
+/* Mobile Devices
 @media (min-width: 300px) and (max-width: 650px) {
     .code-skills,.title-skill {
         text-align: center;
@@ -214,4 +233,4 @@ body {
     .landing-info {
         font-size: 10px
     }
-}
+} */
