@@ -8,7 +8,7 @@
     color: #eee !important;
   }
   
-  [data-theme="dark"] .nav-link, .navbar-light, .fa-github.proj, .fa-bars, .navbar-brand {
+  [data-theme="dark"] .nav-link, .navbar-light, .fa-github.proj, .fa-bars, .navbar-brand, .heading {
     color: #eee !important;
   }
 
