@@ -148,89 +148,34 @@ li.timeline-item::before {
     border-radius: 50%;
 }
 
-/* #home, #experience, #projects {
-    position: fixed;
-} */
-
-/* Tablets
+/* Tablets */
 @media (min-width: 700px) and (max-width: 1200px) {
-    .landing-info {
-        font-size: 20px;
-    }
-    .project-name {
-        font-size: 25px;
-    }
-    .project-date {
-        font-size: 15px;
-    }
-    .fa-chalkboard-teacher {
-        font-size: 150px;
-    }
-    .fa-cogs, .fa-robot {
-        font-size: 100px;
-    }
-    .fa-hands-helping {
-        font-size: 150px;
-    }
-    .main-back {
-        padding-top: 70px;
-        padding-right: 15px;
-        padding-left: 15px;
-        padding-bottom: 10px;
+    .section_title {
+        font-size: 35px;
     }
 }
 
-/* Mobile Devices
+/* Mobile Devices */
 @media (min-width: 300px) and (max-width: 650px) {
-    .code-skills,.title-skill {
-        text-align: center;
+    .company {
+        font-size: 17.5px;
     }
-    .main-back {
-        padding-top: 70px;
-        padding-right: 15px;
-        padding-left: 15px;
-        padding-bottom: 10px;
+
+    .date {
+        font-size: 12px;
     }
-    .nav-ops {
-        font-size: 10px;
+
+    .position {
+        font-size: 15px;
     }
-    .fa-linkedin, .fa-facebook-square, .fa-github-square,.service-event {
-        font-size: 25px;
+
+    .responsibilities, .proj_description {
+        font-size: 13.5px;
     }
-    .fa-cogs, .fa-robot, .fa-hands-helping {
-        font-size: 150px;
+
+    ul.responsibilities {
+        padding: 0;
+        margin: 0;
     }
-    .logo-break {
-        display: none;
-    }
-    .logo {
-        height: 25px;
-        width: 25px;
-    }
-    .contact, .quick, .connect, .quick-row, .link-mobile {
-        text-align: center;
-    }
-    .pro-img {
-        height: 300px;
-        widows: 250px;
-    }
-    .img-container {
-        text-align: center;
-    }
-    .removeMobile {
-        display: none;
-    }
-    .landing-name,.project-name {
-        text-align-last: left;
-        font-size: 25px;
-    }
-    .fa-chalkboard-teacher {
-        font-size: 150px;
-    }
-    .hands {
-        text-align: center;
-    }
-    .landing-info {
-        font-size: 10px
-    }
-} */
+    
+}
