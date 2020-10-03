@@ -3,8 +3,8 @@ body {
     background-color: #F8F9FA; 
 }
 
-.heading {
-    color: #212529;
+.heading, .navbar-brand {
+    color:  rgba(0,0,0,.5) !important;
 }
 
 .landing {
