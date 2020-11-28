@@ -32,10 +32,6 @@ body {
     color: black !important;
 }
 
-.fa-dev.proj {
-    color: #003E54;
-}
-
 .fa-graduation-cap {
     font-size: 30px;
 }
@@ -92,6 +88,10 @@ ul.edu {
     color: black !important;
     font-size: 50px;
 }
+
+/* .fa-code {
+    color: black !important;
+} */
 
 .fa-linkedin.media {
     color: #2867b2 !important;
