@@ -1,0 +1,210 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8F9FA; 
+    display: grid;
+}
+
+.heading, .navbar-brand {
+    color:  rgba(0,0,0,.5) !important;
+}
+
+.landing {
+    /* height: 100%;
+    width: 100%; */
+    background-color: #F8F9FA;    
+}
+
+.progress_label {
+    float: left;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.proj {
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+.fa-bars {
+    color: rgb(192, 192, 192) !important;
+}
+
+.fa-github.proj {
+    color: black !important;
+}
+
+.fa-graduation-cap {
+    font-size: 30px;
+}
+
+ul.edu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.acd {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.link {
+    color: #212529;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.connect {
+    text-align: center;
+}
+
+.foot-link:hover {
+    text-decoration: none;
+    color: #212529;
+    background-color: rgba(134, 134, 134, 0.2);
+}
+
+.landing-name,.landing-info {
+    font-size: 35px;
+}
+
+.main-back {
+    padding: 70px;
+}
+
+
+.footer {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff !important;
+    padding: 25px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.fa-github-square.media {
+    color: black !important;
+    font-size: 50px;
+}
+
+/* .fa-code {
+    color: black !important;
+} */
+
+.fa-linkedin.media {
+    color: #2867b2 !important;
+    font-size: 50px;
+}
+
+.fa-html5 {
+    color: #e34f26;
+    font-size: 50px;
+}
+
+.fa-css3-alt {
+    color: #2663be;
+    font-size: 50px;
+}
+
+.fa-bootstrap {
+    color: #563d7c;
+    font-size: 50px;
+}
+
+/* Timeline */
+/* From https://bootstrapious.com/p/timeline */
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #007bff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid rgb(192, 192, 192);
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#portrait {
+    border-radius: 50%;
+}
+
+/* Tablets */
+@media (min-width: 700px) and (max-width: 1200px) {
+    .section_title {
+        font-size: 35px;
+    }
+}
+
+/* Mobile Devices */
+@media (min-width: 300px) and (max-width: 650px) {
+
+    .container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    
+    .company {
+        font-size: 17.5px;
+    }
+
+    .date {
+        font-size: 12px;
+    }
+
+    .position {
+        font-size: 15px;
+    }
+
+    .responsibilities, .proj_description {
+        font-size: 13.5px;
+    }
+
+    ul.responsibilities {
+        padding: 0;
+        margin: 0;
+    }
+    
+}
