@@ -1,22 +1,19 @@
 const express = require('express');
 const app = express();
-
 const nodeMailer = require('nodemailer');
-
 // port 5000 for dev
 const PORT = process.env.PORT || 5000;
-
 const { google } = require('googleapis');
-
-require('dotenv').config();
 
 const oAuth2Client = new google.auth.OAuth2(process.env.CLIENT_ID, process.env.CLIENT_SECRET, process.env.REDIRECT_URI);
 oAuth2Client.setCredentials({ refresh_token: process.env.REF_TOKEN });
 
 // Middleware
-
 app.use(express.static('public'));
 app.use(express.json());
+
+// Security
+app.disable('x-powered-by');
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html');
