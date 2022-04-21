@@ -22,8 +22,6 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', async (req, res) => {
-    console.log(req.body);
-
     try {
         const accessToken = await oAuth2Client.getAccessToken(); 
 
