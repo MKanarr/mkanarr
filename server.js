@@ -42,8 +42,8 @@ app.post('/', async (req, res) => {
         const mailOptions = {
             from: req.body.email,
             to: process.env.EMAIL,
-            subject: `Message from ${req.body.email} - ${req.body.subject}`,
-            text: req.body.message
+            subject: req.body.subject,
+            text: req.body.message + `\n\nFrom - ${req.body.name} ${req.body.email}`
         };
     
         transporter.sendMail(mailOptions, (error, info) => {
